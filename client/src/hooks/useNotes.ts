@@ -8,7 +8,7 @@ export interface Note {
   createdAt: number;
 }
 
-const API_BASE = 'http://localhost:5001/api/notes';
+const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5001/api/notes';
 
 export const useNotes = () => {
   const [notes, setNotes] = useState<Note[]>([]);

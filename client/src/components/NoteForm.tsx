@@ -1,4 +1,4 @@
-import { useState, FormEvent } from 'react';
+import React, { useState } from 'react';
 import styles from './NoteForm.module.css';
 
 interface NoteFormProps {
@@ -10,7 +10,7 @@ export const NoteForm = ({ onAdd }: NoteFormProps) => {
   const [content, setContent] = useState('');
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!title.trim() || !content.trim()) return;
     
