@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Build artifacts
+dist/
+build/
+*.tsbuildinfo
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+
+# Editor/System misc
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.pem
+
+# Vercel specifics (if used)
+.vercel/
+
+# Specific sub-folder artifacts
+client/dist/
+server/dist/
+server/node_modules/
+client/node_modules/
